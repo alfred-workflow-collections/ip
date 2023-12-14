@@ -10,3 +10,8 @@
 pip3 install requests
 ```
 
+```
+where 18.173.121.92
+```
+
+![](1.png)

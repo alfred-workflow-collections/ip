@@ -5,7 +5,7 @@ import socket
 
 
 def callback(data):
-    local_ip = socket.gethostbyname(socket.gethostname())
+    local_ip = "".join([l for l in socket.gethostbyname_ex(socket.gethostname())[2] if not l.startswith("127.")])
     items = [
         {
             "title": local_ip,
